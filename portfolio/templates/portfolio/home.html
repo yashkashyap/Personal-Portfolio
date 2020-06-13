@@ -1,0 +1,33 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+  <h1 class="MainHeading">Yash's Portfolio</h1><br>
+
+  {% load static %}
+
+  <img class="myimg" src="{% static 'portfolio/hello.jpg' %}" alt="img" width="30%" height="30%"><br>
+  <h3 style="text-align: center;">A Django Developer and a Machine Learning Enthusiast!</h3>
+
+  <hr class="container" style="border-style: solid; border-color:#7c7d7a; opacity:0.5"><br>
+
+  <div class="row mr-2 ml-2">
+    {% for project in projects %}
+    <div class="col-sm">
+      <img class="proj_img" src="{{ project.image.url }}", height="100", width=100><br>
+
+      <h3>{{ project.title }}</h3>
+
+      <p class="description">{{ project.description }}</p><br>
+
+      {% if project.url %}
+
+      <a href="{{ project.url }}">Link</a>
+
+      {% endif %}
+      <br>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

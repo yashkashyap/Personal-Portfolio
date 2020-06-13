@@ -1,0 +1,38 @@
+.MainHeading
+{
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.myimg
+{
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.proj_img
+{
+  display: block;
+  margin: 0 auto;
+  width: inherit;
+  height: auto;
+}
+
+.description
+{
+  text-align: justify;
+}
+
+.blog
+{
+  font-size: 2rem;
+  color: #4c4d4b;
+}
+
+.date
+{
+  font-weight: bold;
+  opacity: 0.6;
+}
